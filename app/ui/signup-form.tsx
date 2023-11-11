@@ -3,6 +3,7 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import { SignupCredential, SignupError } from "../lib/definitions";
 import validation from "../lib/signup-validation";
+import { signUp } from "../utils/api";
 
 export default function SignupForm() {
   const [credential, setCredential] = useState<SignupCredential>({
@@ -22,6 +23,7 @@ export default function SignupForm() {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    signUp(credential);
     setErrors(validation(credential));
   };
 
