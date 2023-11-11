@@ -4,9 +4,9 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h1 className={styles.title}>Shoot Children's Scares</h1>
+      <h1 className={styles.title}>Shoot Childrens Scares</h1>
       <p className={styles.subtitle}>
-        Point-and-click-игрушка, где надо "отстреливать" страхи детей.
+        Point-and-click-игрушка, где надо отстреливать страхи детей.
       </p>
 
       <div className={styles.buttons}>
