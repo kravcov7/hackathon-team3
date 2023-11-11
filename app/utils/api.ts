@@ -64,7 +64,7 @@ export const fetchWithRefresh = async (url: string, options: RequestInit) => {
   try {
     const res = await fetch(url, options);
     return await requestHandler(res);
-  } catch (err) {
+  } catch (err: any) {
     return err.json().then((err: TFetchWithRefresh) => {
       console.log(err);
       if (err?.message === "jwt expired") {
