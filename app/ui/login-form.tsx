@@ -23,7 +23,6 @@ export default function LoginForm() {
     e.preventDefault();
     setErrors(validation(credential));
   };
-  
 
   return (
     <form
@@ -31,7 +30,7 @@ export default function LoginForm() {
       onSubmit={handleSubmit}
       className="flex flex-col items-center gap-y-7 p-5 border-2 border-black rounded-lg"
     >
-      <h2>Log In</h2>
+      <h2>Вход</h2>
 
       <label htmlFor="email" className="flex flex-col gap-y-1.5">
         Email
@@ -66,13 +65,13 @@ export default function LoginForm() {
         type="submit"
         className="py-2 px-5 rounded-lg bg-emerald-600 text-white"
       >
-        Log In
+        Войти
       </button>
       <Link
         href="/form/signup"
         className="py-2 px-5 rounded-lg bg-indigo-600 text-white"
       >
-        Create account
+        Регистрация
       </Link>
     </form>
   );
