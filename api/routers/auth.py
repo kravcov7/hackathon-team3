@@ -1,8 +1,8 @@
 from jose import jwt
 from starlette import status
 from typing import Annotated
-from datetime import timedelta, datetime
 from pydantic import BaseModel
+from datetime import timedelta, datetime
 from fastapi import APIRouter, Depends, HTTPException
 from fastapi.security import OAuth2PasswordRequestForm
 
@@ -41,17 +41,26 @@ def authenticate_user(username: str, password: str, db):
     return user
 
 
-def create_access_token(username: str, user_id: int, role:str, expires_delta: timedelta):
-    encode = {'sub': username, 'id': user_id, 'role': role}
+def create_access_token(username: str, user_id: int, expires_delta: timedelta):
+    encode = {'sub': username, 'id': user_id}
     expires = datetime.utcnow() + expires_delta
     encode.update({'exp': expires})
     return jwt.encode(encode, SECRET_KEY, algorithm=ALGORITHM[0])
 
 
+@router.get('/test')
+async def testing_page():
+    return "It's working"
+
+
 @router.post('/signup')
 async def create_user(db: db_dependency_type, signup_data: SignupModel):
     hashed_password = bcrypt_context.hash(signup_data.password)
-    user_to_create = User(**signup_data.dict(exclude={'password'}), hashed_password=hashed_password)
+    user_to_create = User(
+        email=signup_data.email,
+        username=signup_data.username,
+        hashed_password=hashed_password
+    )
 
     db.add(user_to_create)
     db.commit()
@@ -60,8 +69,8 @@ async def create_user(db: db_dependency_type, signup_data: SignupModel):
                 "data":
                 {
                     "username": user_to_create.username,
-                     "email": user_to_create.username,
-                     "message": "Registration succeeded"
+                    "email": user_to_create.username,
+                    "message": "Registration succeeded",
                 }
             }
 
@@ -72,5 +81,5 @@ async def login_for_access_token(form_data: Annotated[OAuth2PasswordRequestForm,
     if not user:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail='Not valid user')
 
-    token = create_access_token(user.username, user.id, timedelta(minutes=20))
+    token = create_access_token(user.username, user.id, expires_delta=timedelta(minutes=20))
     return {'access_token': token, 'token_type': 'bearer'}
