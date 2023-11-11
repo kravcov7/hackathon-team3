@@ -6,7 +6,8 @@ type TPropsRegister = { name: string; password: string; email: string };
 type TPropsLogin = Omit<TPropsRegister, "email">;
 
 export const signUp = ({ email, password, name }: TPropsRegister) => {
-  return fetch(`${url}/auth/signup`, {
+  // return fetch(`api/auth/signup`, {
+  return fetch(`http://127.0.0.1:8000/api/auth/signup`, {
     method: "POST",
     mode: "cors",
     cache: "no-cache",
