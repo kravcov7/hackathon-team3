@@ -1,7 +1,6 @@
-
 ## Команда #3. Благотворительный проект для хакатона
 
-## Участники 
+## Участники
 
 - Elvira - https://t.me/krasnoe_soInce
 - Ekaterina - https://t.me/KateF20
@@ -9,10 +8,8 @@
 
 # Стек
 
- - Front - React, Next
- - Back - Python, FAST API
-
-
+- Front - React, Next
+- Back - Python, FAST API
 
 ## Deploy Your Own
 
