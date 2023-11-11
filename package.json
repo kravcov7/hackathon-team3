@@ -10,7 +10,6 @@
     "start": "next start",
     "lint": "next lint",
     "prettier": "npx prettier . --write"
-
   },
   "dependencies": {
     "@types/node": "20.2.4",

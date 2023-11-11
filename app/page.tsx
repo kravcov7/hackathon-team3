@@ -18,6 +18,18 @@ export default function Home() {
             Кнопка старт api/index.py
           </code>
         </Link>
+        <Link
+        href="/form"
+        className="py-2 px-5 rounded-lg bg-indigo-600 text-white"
+      >
+        Войти в аккаунт
+      </Link>
+      <Link
+        href="/form/signup"
+        className="py-2 px-5 rounded-lg bg-indigo-600 text-white"
+      >
+        Регистрация
+      </Link>
       </div>
     </main>
   );
