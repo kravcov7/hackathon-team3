@@ -1,0 +1,32 @@
+.main {
+  background: gray;
+  margin: auto;
+  max-width: 500px;
+  margin-top: 200px;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 36px;
+}
+
+.subtitle {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content:  center;
+
+}
+
+.button {
+    justify-content:  center;
+    align-items: center;
+    max-width: fit-content;
+    margin: auto;
+}
