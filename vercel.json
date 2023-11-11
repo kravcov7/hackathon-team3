@@ -1,4 +1,4 @@
 {
-  "builds": [{ "src": "/api/index.py", "use": "@now/python", "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" } }],
+  "builds": [{ "src": "/api/index.py", "use": "@vercel/python3.9" }],
   "routes": [{ "src": "/api/(.*)", "dest": "/api/index.py" }]
 }
