@@ -1,31 +1,18 @@
-<p align="center">
-  <a href="https://nextjs-fastapi-starter.vercel.app/">
-    <img src="https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png" height="96">
-    <h3 align="center">Next.js FastAPI Starter</h3>
-  </a>
-</p>
 
-<p align="center">Simple Next.js boilerplate that uses <a href="https://fastapi.tiangolo.com/">FastAPI</a> as the API backend.</p>
+## Команда #3. Благотворительный проект для хакатона
 
-<br/>
+## Участники 
 
-## Introduction
+- Elvira - https://t.me/krasnoe_soInce
+- Ekaterina - https://t.me/KateF20
+- Artem - https://t.me/ametist17
 
-This is a hybrid Next.js + Python app that uses Next.js as the frontend and FastAPI as the API backend. One great use case of this is to write Next.js apps that use Python AI libraries on the backend.
+# Стек
 
-## How It Works
+ - Front - React, Next
+ - Back - Python, FAST API
 
-The Python/FastAPI server is mapped into to Next.js app under `/api/`.
 
-This is implemented using [`next.config.js` rewrites](https://github.com/digitros/nextjs-fastapi/blob/main/next.config.js) to map any request to `/api/:path*` to the FastAPI API, which is hosted in the `/api` folder.
-
-On localhost, the rewrite will be made to the `127.0.0.1:8000` port, which is where the FastAPI server is running.
-
-In production, the FastAPI server is hosted as [Python serverless functions](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python) on Vercel.
-
-## Demo
-
-https://nextjs-fastapi-starter.vercel.app/
 
 ## Deploy Your Own
 
