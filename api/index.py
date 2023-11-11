@@ -1,7 +1,11 @@
 from fastapi import FastAPI
 
+from api.models import Base
+from api.database import engine
+from api.routers import auth
+
 app = FastAPI()
 
-@app.get("/api/python")
-def hello_world():
-    return {"message": "Hello World"}
+Base.metadata.create_all(engine)
+
+app.include_router(auth.router)
