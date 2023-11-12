@@ -4,38 +4,9 @@
   grid-template-rows: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
-  gap: 100px 40px;
+  gap: 2rem;
   padding: 15px;
   max-width: 100%;
   width: 400px;
   height: 400px;
-  margin-bottom: 90px;
-}
-
-.unit {
-  position: absolute;
-  left: 15%;
-  bottom: 10%;
-  transform: translateY(-200%);
-}
-
-.active {
-  opacity: 1;
-  animation: unit-bubbling 1.5s ease-in-out infinite;
-}
-
-.disabled {
-  opacity: 0;
-}
-
-@keyframes unit-bubbling {
-  0% {
-    transform: translateY(-10%);
-  }
-  50% {
-    transform: translateY(-200%);
-  }
-  100% {
-    transform: translateY(-10%);
-  }
 }

@@ -17,6 +17,13 @@
   background-repeat: no-repeat;
 }
 
+.unit {
+  position: absolute;
+  left: 15%;
+  bottom: 10%;
+  transform: translateY(-200%);
+}
+
 .active {
   opacity: 1;
   animation: unit-bubbling 1.5s ease-in-out infinite;
