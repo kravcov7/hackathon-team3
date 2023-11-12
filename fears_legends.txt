@@ -1,0 +1,11 @@
+Broken heart and hands: Represents the fear being betrayed by loved ones. (public/images/betrayal.png)
+Broken heart and a house: Symbolizes the fear of losing a home and family.
+A hand stopping a fist: Indicates the fear of violence. (public/images/violence.pgn)
+A girl in rainy weather: Means the fear of loneliness and not having a home.
+A boy sitting with his head down: Also represents the fear of loneliness. (public/images/loneliness.png)
+Place icon with a question mark: Embodies the fear of the unknown, especially regarding new places, families, or life changes. (public/images/place.png)
+A green face with a question mark: Illustrates the fear of unknown people or families.
+Two-faced person: An example of the fear of betrayal and lies.
+A little boy and a big gray person in the background: Shows the fear of being left by one's family. (public/images/orphan.png)
+A doctor: Represents the fear of doctors and the formal procedures associated with orphanages.
+A man in a dark room: Means the fear of darkness.
