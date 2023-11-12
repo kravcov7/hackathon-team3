@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 2rem;
+}
