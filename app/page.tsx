@@ -11,29 +11,12 @@ export default function Home() {
 
       <div className={styles.buttons}>
         <Link
-          href="/second"
+          href="/game"
           className={
             styles.button + " py-2 px-5 rounded-lg bg-indigo-600 text-white"
           }
         >
           Играть
-        </Link>
-        <Link
-          href="/form/signup"
-          className={
-            styles.button + " py-2 px-5 rounded-lg bg-indigo-600 text-white"
-          }
-        >
-          Регистрация
-        </Link>
-
-        <Link
-          href="/form"
-          className={
-            styles.button + " py-2 px-5 rounded-lg bg-indigo-600 text-white"
-          }
-        >
-          Войти в аккаунт
         </Link>
       </div>
     </main>
