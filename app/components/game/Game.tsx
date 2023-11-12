@@ -29,6 +29,7 @@ export default function Game() {
   return (
     <div className={styles.container}>
       <Button onClick={handleRestartClick}>Начать заново</Button>
+      <h2 className={styles.text}>Попаданий: {score}</h2>
       <Scene isHit={hit} onUnitClick={handleClick} />
     </div>
   );
