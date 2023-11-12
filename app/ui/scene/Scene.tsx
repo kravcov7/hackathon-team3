@@ -10,9 +10,11 @@ type SceneProps = {
 
 export default function Scene({ isHit, onUnitClick }: SceneProps) {
 
+  const newUnits = units.slice(2)
+
   return (
     <div className={styles.scene}>
-      {units.map((unit, index) => (
+      {newUnits.map((unit, index) => (
         <GameBlock key={index} onClick={onUnitClick} isHit={isHit}>
         </GameBlock>
       ))}
