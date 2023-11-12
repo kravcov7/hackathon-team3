@@ -18,6 +18,15 @@ export default function Home() {
         >
           Играть
         </Link>
+
+        <Link
+          href="/legends"
+          className={
+            styles.button + " py-2 px-5 rounded-lg bg-indigo-600 text-white"
+          }
+        >
+          Легенды о страхах
+        </Link>
       </div>
     </main>
   );
