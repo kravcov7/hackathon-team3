@@ -1,12 +1,11 @@
-Broken heart and hands: Represents the fear being betrayed by loved ones. (public/images/betrayal.png)
-Broken heart and a house: Symbolizes the fear of losing a home and family. (public/images/orphan-1.png)
-A hand stopping a fist: Indicates the fear of violence. (public/images/violence.pgn)
-A girl in rainy weather: Means the fear of loneliness and not having a home. (public/images/sad.png)
-A boy sitting with his head down: Also represents the fear of loneliness. (public/images/loneliness.png)
-Place icon with a question mark: Embodies the fear of the unknown, especially regarding new places, families, or life changes. (public/images/place.png)
-A green face with a question mark: Illustrates the fear of unknown people or families. (public/images/unknown.png)
-Two-faced person: An example of the fear of betrayal and lies. ((public/images/mask.png))
-A little boy and a big gray person in the background: Shows the fear of being left by one's family. (public/images/orphan.png)
-A doctor: Represents the fear of doctors and the formal procedures associated with orphanages. (public/images/doctor.png)
-A man in a dark room: Means the fear of darkness. (public/images/dark.png)
-
+Сломанное сердце и руки: Cтрах предательства со стороны близких.
+Сломанное сердце и дом: Страх потери дома и семьи.
+Рука, останавливающая кулак: Cтрах перед насилием.
+Девушка в дождливую погоду: Страх одиночества и отсутствия дома.
+Мальчик, сидящий с опущенной головой: Страх одиночества.
+Иконка места со знаком вопроса: Страх перед неизвестным, особенно в отношении новых мест, семей или изменений в жизни.
+Зеленое лицо со знаком вопроса: Страх перед неизвестными людьми или семьями.
+Человек с двумя лицами: Страха предательства и лжи.
+Маленький мальчик и большой серый человек на заднем плане: Страх быть оставленным своей семьей.
+Доктор: Страх перед врачами и формальными процедурами, связанными с детскими домами и домами сирот.
+Человек в темной комнате: Страх темноты.
