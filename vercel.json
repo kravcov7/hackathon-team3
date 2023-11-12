@@ -14,7 +14,7 @@
     { "src": "/api/(.*)", "dest": "api/index.py" },
     {
       "src": "/(.*)",
-      "dest": "index.js"
+      "dest": "page.js"
     }
   ]
 }
