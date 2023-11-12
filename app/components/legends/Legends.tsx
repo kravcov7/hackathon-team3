@@ -22,7 +22,7 @@ export default function Legends() {
           </li>
         ))}
       </ul>
-      <Link href={"/"} className={styles.link}>
+      <Link href={"/"} className={styles.button}>
         Назад
       </Link>
     </div>
