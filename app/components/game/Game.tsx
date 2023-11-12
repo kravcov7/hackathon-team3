@@ -23,7 +23,7 @@ export default function Game() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Shoot Children' Scares Game</h1>
+      <h1 className={styles.title}>Shoot Childrens Scares Game</h1>
       <Scene isHit={hit} onUnitClick={handleClick} />
     </div>
   );
