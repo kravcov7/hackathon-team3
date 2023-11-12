@@ -11,36 +11,23 @@
   height: 400px;
 }
 
-.item {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.item::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("/images/house.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .unit {
   position: absolute;
   left: 15%;
   bottom: 10%;
+  transform: translateY(-200%);
 }
 
 .active {
-  animation: fear-bubbling 1.5s ease-in-out infinite;
+  opacity: 1;
+  animation: unit-bubbling 1.5s ease-in-out infinite;
 }
 
-@keyframes fear-bubbling {
+.disabled {
+  opacity: 0;
+}
+
+@keyframes unit-bubbling {
   0% {
     transform: translateY(-10%);
   }

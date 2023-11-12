@@ -1,63 +1,150 @@
 import Image from "next/image";
 import { units } from "@/app/lib/data";
+import GameBlock from "../block/GameBlock";
 import styles from "./Scene.module.css";
 
-export default function Scene() {
+type SceneProps = {
+  isHit: boolean;
+  onUnitClick: () => void;
+};
+
+export default function Scene({ isHit, onUnitClick }: SceneProps) {
   return (
     <div className={styles.scene}>
-      <div className={styles.item}>
-        <button className={`${styles.unit} ${styles.active}`}>
-          <Image src={units.orphan.src} width={70} height={70} alt={""} />
-        </button>
-      </div>
+      <GameBlock>
+        <Image
+          onClick={onUnitClick}
+          className={
+            isHit
+              ? `${styles.unit} ${styles.disabled}`
+              : `${styles.unit} ${styles.active}`
+          }
+          src={units[0].src}
+          width={70}
+          height={70}
+          alt={""}
+        />
+      </GameBlock>
 
-      <div className={styles.item}>
-        <button className={`${styles.unit} ${styles.active}`}>
-          <Image src={units.betrayal.src} width={70} height={70} alt={""} />
-        </button>
-      </div>
+      <GameBlock>
+        <Image
+          onClick={onUnitClick}
+          className={
+            isHit
+              ? `${styles.unit} ${styles.disabled}`
+              : `${styles.unit} ${styles.active}`
+          }
+          src={units[2].src}
+          width={70}
+          height={70}
+          alt={""}
+        />
+      </GameBlock>
 
-      <div className={styles.item}>
-        <button className={`${styles.unit} ${styles.active}`}>
-          <Image src={units.loneliness.src} width={70} height={70} alt={""} />
-        </button>
-      </div>
+      <GameBlock>
+        <Image
+          onClick={onUnitClick}
+          className={
+            isHit
+              ? `${styles.unit} ${styles.disabled}`
+              : `${styles.unit} ${styles.active}`
+          }
+          src={units[1].src}
+          width={70}
+          height={70}
+          alt={""}
+        />
+      </GameBlock>
 
-      <div className={styles.item}>
-        <button className={`${styles.unit} ${styles.active}`}>
-          <Image src={units.place.src} width={70} height={70} alt={""} />
-        </button>
-      </div>
+      <GameBlock>
+        <Image
+          onClick={onUnitClick}
+          className={
+            isHit
+              ? `${styles.unit} ${styles.disabled}`
+              : `${styles.unit} ${styles.active}`
+          }
+          src={units[3].src}
+          width={70}
+          height={70}
+          alt={""}
+        />
+      </GameBlock>
 
-      <div className={styles.item}>
-        <button className={`${styles.unit} ${styles.active}`}>
-          <Image src={units.loneliness.src} width={70} height={70} alt={""} />
-        </button>
-      </div>
+      <GameBlock>
+        <Image
+          onClick={onUnitClick}
+          className={
+            isHit
+              ? `${styles.unit} ${styles.disabled}`
+              : `${styles.unit} ${styles.active}`
+          }
+          src={units[1].src}
+          width={70}
+          height={70}
+          alt={""}
+        />
+      </GameBlock>
 
-      <div className={styles.item}>
-        <button className={`${styles.unit} ${styles.active}`}>
-          <Image src={units.violence.src} width={70} height={70} alt={""} />
-        </button>
-      </div>
+      <GameBlock>
+        <Image
+          onClick={onUnitClick}
+          className={
+            isHit
+              ? `${styles.unit} ${styles.disabled}`
+              : `${styles.unit} ${styles.active}`
+          }
+          src={units[4].src}
+          width={70}
+          height={70}
+          alt={""}
+        />
+      </GameBlock>
 
-      <div className={styles.item}>
-        <button className={`${styles.unit} ${styles.active}`}>
-          <Image src={units.betrayal.src} width={70} height={70} alt={""} />
-        </button>
-      </div>
+      <GameBlock>
+        <Image
+          onClick={onUnitClick}
+          className={
+            isHit
+              ? `${styles.unit} ${styles.disabled}`
+              : `${styles.unit} ${styles.active}`
+          }
+          src={units[0].src}
+          width={70}
+          height={70}
+          alt={""}
+        />
+      </GameBlock>
 
-      <div className={styles.item}>
-        <button className={`${styles.unit} ${styles.active}`}>
-          <Image src={units.orphan.src} width={70} height={70} alt={""} />
-        </button>
-      </div>
+      <GameBlock>
+        <Image
+          onClick={onUnitClick}
+          className={
+            isHit
+              ? `${styles.unit} ${styles.disabled}`
+              : `${styles.unit} ${styles.active}`
+          }
+          src={units[3].src}
+          width={70}
+          height={70}
+          alt={""}
+        />
+      </GameBlock>
 
-      <div className={styles.item}>
-        <button className={`${styles.unit} ${styles.active}`}>
-          <Image src={units.loneliness.src} width={70} height={70} alt={""} />
-        </button>
-      </div>
+      <GameBlock>
+        <Image
+          onClick={onUnitClick}
+          className={
+            isHit
+              ? `${styles.unit} ${styles.disabled}`
+              : `${styles.unit} ${styles.active}`
+          }
+          src={units[4].src}
+          width={70}
+          height={70}
+          alt={""}
+        />
+      </GameBlock>
     </div>
   );
 }

@@ -1,17 +1,22 @@
-export const units = {
-  betrayal: {
+export const units = [
+  {
+    id: "1",
     src: "/images/fears/betrayal.png",
   },
-  loneliness: {
+  {
+    id: "2",
     src: "/images/fears/loneliness.png",
   },
-  orphan: {
+  {
+    id: "3",
     src: "/images/fears/orphan.png",
   },
-  place: {
+  {
+    id: "4",
     src: "/images/fears/place.png",
   },
-  violence: {
+  {
+    id: "5",
     src: "/images/fears/violence.png",
   },
-};
+];
