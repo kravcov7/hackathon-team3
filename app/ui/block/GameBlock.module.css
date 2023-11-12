@@ -16,3 +16,24 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.active {
+  opacity: 1;
+  animation: unit-bubbling 1.5s ease-in-out infinite;
+}
+
+.disabled {
+  opacity: 0;
+}
+
+@keyframes unit-bubbling {
+  0% {
+    transform: translateY(-10%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
+}
