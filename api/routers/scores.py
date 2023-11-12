@@ -6,7 +6,7 @@ from api.dependencies import db_dependency_type
 
 
 router = APIRouter(
-    prefix='/scores'
+    prefix='/api/scores'
 )
 
 
