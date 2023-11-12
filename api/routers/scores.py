@@ -15,11 +15,6 @@ class ScoreModel(BaseModel):
     score: int
 
 
-@router.get('/test')
-async def testing_page():
-    return {"data": "Data from our Python server"}
-
-
 @router.post('/submit-score')
 async def submit_score(data_to_submit: ScoreModel, db: db_dependency_type):
     new_round = Round(**data_to_submit.dict())
