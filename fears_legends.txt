@@ -9,3 +9,4 @@ Two-faced person: An example of the fear of betrayal and lies. ((public/images/m
 A little boy and a big gray person in the background: Shows the fear of being left by one's family. (public/images/orphan.png)
 A doctor: Represents the fear of doctors and the formal procedures associated with orphanages. (public/images/doctor.png)
 A man in a dark room: Means the fear of darkness. (public/images/dark.png)
+
